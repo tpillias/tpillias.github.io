@@ -80,6 +80,11 @@ function openPanel(id, card) {
   const tpl = document.getElementById(id);
   if (!tpl) return;
   lastCard = card;
+  // Count project openings in GoatCounter
+  if (window.goatcounter && window.goatcounter.count) {
+    const title = card.querySelector("h3");
+    window.goatcounter.count({ path: "project-" + id, title: "Project: " + (title ? title.textContent : id), event: true });
+  }
   panelContent.replaceChildren(tpl.content.cloneNode(true));
   panel.scrollTop = 0;
   overlay.hidden = false;
