@@ -273,6 +273,18 @@ p { margin: 0 0 1em; }
 .panel ul { padding-left: 1.1em; }
 .panel li { margin-bottom: .7em; }
 .panel-fig { width: 100%; border-radius: 6px; border: 1px solid var(--cream-2); background: #fff; margin: 24px 0; }
+.panel h3 { font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-muted); margin: 32px 0 10px; }
+.panel figure { margin: 24px 0; }
+.panel figure .panel-fig { margin: 0; }
+.panel .panel-fig.photo { max-height: 440px; width: 100%; object-fit: cover; border: 0; }
+.panel figcaption { font-size: .82rem; color: var(--ink-muted); margin-top: 8px; line-height: 1.5; }
+.kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 24px 0 8px; }
+.kpis div { background: #fbf7ee; border: 1px solid var(--cream-2); border-radius: 6px; padding: 14px; }
+.kpis b { display: block; font-size: 1.5rem; font-weight: 500; letter-spacing: -.02em; line-height: 1.1; }
+.kpis span { display: block; font-size: .76rem; color: var(--ink-muted); margin-top: 4px; line-height: 1.35; }
+.panel .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 32px; padding-top: 20px; border-top: 1px solid var(--cream-2); }
+.panel .tag { font-size: .76rem; padding: 4px 11px; border-radius: 999px; background: var(--navy); color: var(--cream); }
+@media (max-width: 480px) { .kpis { grid-template-columns: 1fr; } }
 .todo { margin-top: 28px; padding: 14px 18px; border-left: 3px solid var(--navy); background: var(--cream-2); font-size: .9rem; }
 body.locked { overflow: hidden; }
 @media (max-width: 600px) { .panel { padding: 72px 20px 40px; } }

@@ -111,7 +111,7 @@
           <div class="p-body">
             <p class="p-meta">2025 · University of Iceland</p>
             <h3>Habitat use of Arctic charr morphs</h3>
-            <p>Acoustic telemetry of benthic and limnetic morphs in an Icelandic lake.</p>
+            <p>Two years of acoustic telemetry reveal how sympatric morphs share Lake Thingvallavatn.</p>
             <span class="p-more">Read more <span aria-hidden="true">→</span></span>
           </div>
         </button>
@@ -121,37 +121,37 @@
           <div class="p-body">
             <p class="p-meta">2025 · University of Iceland</p>
             <h3>Genomic architecture of parr marks in Arctic charr</h3>
-            <p>De novo linkage map and QTL analysis from RADseq data.</p>
+            <p>A de novo linkage map from RADseq data, validated by QTL mapping.</p>
             <span class="p-more">Read more <span aria-hidden="true">→</span></span>
           </div>
         </button>
 
         <button class="p-card" data-project="bivalves">
-          <div class="p-img placeholder"><span>Arcachon Bay</span></div>
+          <div class="p-img"><img src="img/projects/bivalves-map.jpg" alt="Maps of bivalve abundance in Arcachon Bay" style="object-position: 50% 20%"></div>
           <div class="p-body">
             <p class="p-meta">2024 – 2025 · IFREMER</p>
             <h3>Drivers of bivalve distribution in Arcachon Bay</h3>
-            <p>Machine-learning models coupled with a hydrodynamic model.</p>
+            <p>Machine learning on 533 survey stations, sediment data and a hydrodynamic model.</p>
             <span class="p-more">Read more <span aria-hidden="true">→</span></span>
           </div>
         </button>
 
         <button class="p-card" data-project="pikeperch">
-          <div class="p-img placeholder"><span>Landes</span></div>
+          <div class="p-img"><img src="img/projects/pikeperch-tagged.jpg" alt="Tagged pikeperch before release" style="object-position: 50% 40%"></div>
           <div class="p-body">
-            <p class="p-meta">2024 · FDPPMA 40</p>
-            <h3>Monitoring pikeperch reproduction</h3>
-            <p>Field and video monitoring of artificial spawning grounds.</p>
+            <p class="p-meta">2024 · Landes Fishing Federation</p>
+            <h3>Supporting pikeperch reproduction</h3>
+            <p>Video monitoring and tagging on artificial spawning grounds in four lakes.</p>
             <span class="p-more">Read more <span aria-hidden="true">→</span></span>
           </div>
         </button>
 
         <button class="p-card" data-project="river">
-          <div class="p-img placeholder"><span>Nature reserve</span></div>
+          <div class="p-img"><img src="img/projects/river-pond.jpg" alt="The pond of the Errota Handia nature reserve"></div>
           <div class="p-body">
             <p class="p-meta">2023 – 2024 · CEN Nouvelle-Aquitaine</p>
-            <h3>Water quality of a nature-reserve river</h3>
-            <p>Ecological impact of a man-made pond on a protected river.</p>
+            <h3>Does a pond alter its stream? Water quality in a nature reserve</h3>
+            <p>Macroinvertebrates and high-frequency sensors upstream and downstream of a pond.</p>
             <span class="p-more">Read more <span aria-hidden="true">→</span></span>
           </div>
         </button>
@@ -163,57 +163,193 @@
   <template id="charr-telemetry">
     <p class="p-meta">Mar – Sep 2025 · University of Iceland, Institute for Experimental Pathology · Reykjavík</p>
     <h2>Habitat use of Arctic charr morphs</h2>
-    <p class="sup">Supervisor: Kalina Kapralova</p>
+    <p class="sup">Supervisor: Kalina Kapralova · Master's thesis, part 1</p>
+
+    <div class="kpis">
+      <div><b>38</b><span>receivers covering the lake</span></div>
+      <div><b>30</b><span>tagged fish, 4 morphs</span></div>
+      <div><b>2021–23</b><span>continuous tracking</span></div>
+    </div>
+
+    <h3>Context</h3>
+    <p>Lake Thingvallavatn, Iceland's largest lake, hosts four sympatric morphs of Arctic charr that evolved after the last glaciation: two benthic (large and small) and two limnetic (planktivorous and piscivorous). They differ in diet, morphology and spawning, but how they use the lake over a full year had only been described from short, sporadic surveys.</p>
+
+    <h3>Approach</h3>
     <ul>
-      <li>Analysed <b>acoustic telemetry</b> data from 26 tagged fish belonging to four Arctic charr morphs living in the same Icelandic lake.</li>
-      <li>Revealed distinct habitat-use patterns between <b>benthic</b> and <b>limnetic</b> morphs.</li>
+      <li>Analysed a whole-lake <b>acoustic telemetry</b> array: fish carried transmitters recording depth and temperature, detected by 38 receivers.</li>
+      <li>Focused on the large benthic (22 fish) and piscivorous (4 fish) morphs; compared seasonal depth use (Wilcoxon tests in R).</li>
+      <li>Mapped seasonal and spawning-period distributions with <b>kernel density estimation</b> in QGIS.</li>
     </ul>
-    <p class="todo">Full description coming soon.</p>
+
+    <figure>
+      <img src="img/projects/telemetry-morphs.jpg" alt="Kernel density maps of detections for the four morphs" class="panel-fig">
+      <figcaption>Density of detections for each morph across the lake. LB: large benthic, PI: piscivorous, SB: small benthic, PL: planktivorous.</figcaption>
+    </figure>
+
+    <h3>Key findings</h3>
+    <ul>
+      <li>Both morphs moved much deeper in winter: large benthic charr from ~7.5 m in summer to ~29 m in winter.</li>
+      <li>Large benthic charr used a broader part of the lake, especially in spring, matching the distribution of their snail prey on stony substrates. Piscivorous charr stayed in the shallow eastern <i>Nitella</i> beds where their stickleback prey live.</li>
+      <li>During spawning, each morph showed strong fidelity to distinct areas, but some large benthic males were still present on spawning grounds later in the year. This offers a plausible route for the genetic introgression previously observed between the two morphs, despite their different spawning seasons.</li>
+    </ul>
+
+    <figure>
+      <img src="img/projects/telemetry-spawning.jpg" alt="Spawning-period density maps for LB and PI morphs" class="panel-fig">
+      <figcaption>Where each morph concentrates during its spawning period (LB: July–August, PI: October).</figcaption>
+    </figure>
+
+    <div class="tags"><span class="tag">Acoustic telemetry</span><span class="tag">Movement ecology</span><span class="tag">R</span><span class="tag">QGIS</span><span class="tag">Kernel density</span><span class="tag">Adaptive radiation</span></div>
   </template>
 
   <template id="charr-genomics">
     <p class="p-meta">Mar – Sep 2025 · University of Iceland, Institute for Experimental Pathology · Reykjavík</p>
     <h2>Genomic architecture of parr marks in Arctic charr</h2>
-    <p class="sup">Supervisor: Kalina Kapralova</p>
-    <img src="img/linkage-map.jpg" alt="Male and female linkage maps built from RADseq data" class="panel-fig">
+    <p class="sup">Supervisor: Kalina Kapralova · Master's thesis, part 2</p>
+
+    <div class="kpis">
+      <div><b>2,167</b><span>markers mapped</span></div>
+      <div><b>38</b><span>linkage groups</span></div>
+      <div><b>2</b><span>significant QTL</span></div>
+    </div>
+
+    <h3>Context</h3>
+    <p>No complete reference genome is yet available for Thingvallavatn charr. A linkage map orders genetic markers along chromosomes using recombination, and is the basis for finding the genomic regions behind traits that differ between morphs.</p>
+
+    <h3>Approach</h3>
     <ul>
-      <li>Built a <b>de novo linkage map</b> from RADseq data.</li>
-      <li>Performed a <b>QTL analysis</b> across 92 individuals, identifying several genomic regions associated with parr marks.</li>
+      <li>Used a lab-reared <b>backcross family</b> (hybrid planktivorous × small benthic mother, small benthic father) of 93 offspring from wild parental lines.</li>
+      <li>Processed <b>RADseq</b> reads with Stacks (de novo assembly, parameter optimisation) and built sex-specific maps with <b>Lep-MAP3</b> from 122,496 candidate markers.</li>
+      <li>Validated the map with <b>QTL mapping</b> of parr marks (R/qtl, Haley–Knott regression, 1,000 permutations), using two independent scoring methods.</li>
     </ul>
-    <p class="todo">Full description coming soon.</p>
+
+    <figure>
+      <img src="img/linkage-map.jpg" alt="Male and female linkage maps built from RADseq data" class="panel-fig">
+      <figcaption>Male and female linkage maps across 38 linkage groups. Colours show marker density.</figcaption>
+    </figure>
+
+    <h3>Key findings</h3>
+    <ul>
+      <li>A high-density map of 2,167 markers on 38 linkage groups, spanning 3,257 cM (female) and 1,842 cM (male), consistent with other <i>Salvelinus</i> maps.</li>
+      <li>Significant QTL for parr marks on <b>linkage groups 18 and 22</b> (LOD 4.9 and 5.7), recovered with both scoring methods, a strong indication that the map reflects real genomic structure.</li>
+      <li>Wide confidence intervals point to the limits of RADseq for marker density; whole-genome sequencing and multiple families would sharpen resolution.</li>
+    </ul>
+
+    <figure>
+      <img src="img/projects/qtl-parr-marks.png" alt="LOD score profiles on linkage groups 18 and 22" class="panel-fig">
+      <figcaption>LOD profiles on linkage groups 18 (left) and 22 (right) for the strict and relaxed parr-mark scores.</figcaption>
+    </figure>
+
+    <div class="tags"><span class="tag">RADseq</span><span class="tag">Stacks</span><span class="tag">Lep-MAP3</span><span class="tag">R/qtl</span><span class="tag">Linkage mapping</span><span class="tag">QTL</span><span class="tag">Bash</span></div>
   </template>
 
   <template id="bivalves">
     <p class="p-meta">Sep 2024 – Feb 2025 · IFREMER · Anglet</p>
     <h2>Drivers of bivalve distribution in Arcachon Bay</h2>
-    <p class="sup">Supervisors: Nathalie Caill-Milly &amp; Claire Kermorvant</p>
+    <p class="sup">Supervisors: Nathalie Caill-Milly &amp; Claire Kermorvant · Student research project, in pair</p>
+
+    <div class="kpis">
+      <div><b>533</b><span>sampling stations</span></div>
+      <div><b>14,918</b><span>bivalves analysed</span></div>
+      <div><b>82</b><span>environmental variables</span></div>
+    </div>
+
+    <h3>Context</h3>
+    <p>Arcachon Bay is a tidal lagoon where the Manila clam supports a local fishery worth about €1M a year. IFREMER monitors clam stocks, but little is known about what shapes the distribution of the other bivalves living alongside them, including the invasive Asian date mussel.</p>
+
+    <h3>Approach</h3>
     <ul>
-      <li>Co-designed and led a research project with a fellow student on the distribution and abundance of bivalve species in Arcachon Bay.</li>
-      <li>Applied <b>random forests</b> and <b>regression trees</b> combined with a hydrodynamic model, identifying substrate composition and temperature variation as key drivers.</li>
+      <li>Built a dataset from IFREMER's 2018 survey (stratified random design, 533 stations) for four species: common cockle, Manila clam, peppery furrow shell and Asian date mussel.</li>
+      <li>Linked abundances to <b>sediment grain-size</b> data and outputs of the <b>MARS3D hydrodynamic model</b> (temperature, salinity, currents, immersion time).</li>
+      <li>Identified key drivers with <b>regression/classification trees</b> and <b>random forests</b> (750 trees) in R, and mapped distributions in QGIS.</li>
     </ul>
-    <p class="todo">Full description coming soon.</p>
+
+    <figure>
+      <img src="img/projects/bivalves-map.jpg" alt="Relative abundance maps of four bivalve species" class="panel-fig">
+      <figcaption>Relative abundance of the four species across the bay (clockwise from top left: peppery furrow shell, common cockle, Asian date mussel, Manila clam).</figcaption>
+    </figure>
+
+    <h3>Key findings</h3>
+    <ul>
+      <li><b>Salinity, sediment structure and hydrodynamics</b> emerged as the main drivers, with species-specific preferences.</li>
+      <li>Peppery furrow shells concentrated in low-salinity (&lt;22 psu), muddy inner-bay areas; Asian date mussels in low-current zones; cockles in saltier water with heterogeneous sediment.</li>
+      <li>The Manila clam behaved as a generalist with no clear driver, and models explained little variance overall, pointing to unmeasured biotic factors such as competition.</li>
+    </ul>
+
+    <div class="tags"><span class="tag">Random forest</span><span class="tag">Decision trees</span><span class="tag">R</span><span class="tag">QGIS</span><span class="tag">Hydrodynamic model</span><span class="tag">Benthic ecology</span></div>
   </template>
 
   <template id="pikeperch">
-    <p class="p-meta">Feb – Jul 2024 · FDPPMA 40 · Tartas</p>
-    <h2>Monitoring pikeperch reproduction</h2>
-    <p class="sup">Supervisor: Marion Escarpit</p>
+    <p class="p-meta">Feb – Jul 2024 · Landes Fishing Federation (FDPPMA 40) · Tartas</p>
+    <h2>Supporting pikeperch reproduction</h2>
+    <p class="sup">Supervisor: Marion Escarpit · Master's internship</p>
+
+    <div class="kpis">
+      <div><b>63</b><span>artificial spawning grounds monitored</span></div>
+      <div><b>224</b><span>spawning events recorded</span></div>
+      <div><b>54</b><span>video surveys</span></div>
+    </div>
+
+    <h3>Context</h3>
+    <p>Stocking with hatchery fish can harm wild populations. Instead, the Landes Fishing Federation installs artificial spawning grounds (heather panels) to support natural reproduction of pikeperch (<i>Sander lucioperca</i>). My internship evaluated this programme in 2024 and explored what drives spawning.</p>
+
+    <h3>Approach</h3>
     <ul>
-      <li>Monitored artificial pikeperch spawning grounds throughout the spawning period using field observation and video monitoring.</li>
-      <li>Analysed spawning data with <b>random forest</b> models and statistics, identifying temperature and light as the main drivers of spawning timing.</li>
+      <li>Weekly boat surveys from January to June filming every spawning ground with underwater cameras in three coastal lakes and a gravel pit.</li>
+      <li>Continuous temperature and light loggers, and Secchi-disk water clarity.</li>
+      <li><b>Tagged 10 pikeperch</b> with colour-coded tags to follow residence time and site fidelity.</li>
+      <li>Analysed spawning drivers with <b>random forests</b> and linear regression.</li>
     </ul>
-    <p class="todo">Full description coming soon.</p>
+
+    <figure>
+      <img src="img/projects/pikeperch-tagged.jpg" alt="Tagged pikeperch before release" class="panel-fig photo">
+      <figcaption>A pikeperch carrying colour-coded tags, identifiable on camera, before release over its spawning ground.</figcaption>
+    </figure>
+
+    <h3>Key findings</h3>
+    <ul>
+      <li>Spawning grounds were occupied <b>65% of the season on average</b>, and every one was used at least once. Productivity reached 3.45 spawns per ground, up from 0.61 in 2019.</li>
+      <li>Fish arrived earlier each year, and two fish tagged in 2023 returned, suggesting <b>site fidelity</b>.</li>
+      <li>Fewer spawns occurred when more light reached the spawning grounds (R² = 0.74), consistent with this light-shy species.</li>
+      <li>Over 80% of spawning took place before the fishing season opens, a useful result for local management.</li>
+    </ul>
+
+    <div class="tags"><span class="tag">Fieldwork</span><span class="tag">Underwater video</span><span class="tag">Fish tagging</span><span class="tag">Random forest</span><span class="tag">R</span><span class="tag">Conservation</span></div>
   </template>
 
   <template id="river">
-    <p class="p-meta">Sep 2023 – Feb 2024 · CEN Nouvelle-Aquitaine · Anglet</p>
-    <h2>Water quality of a nature-reserve river</h2>
-    <p class="sup">Supervisors: Yann Lalanne &amp; Laurent Lanceleur</p>
+    <p class="p-meta">Sep 2023 – Feb 2024 · CEN Nouvelle-Aquitaine · Arcangues</p>
+    <h2>Does a pond alter its stream? Water quality in a nature reserve</h2>
+    <p class="sup">Supervisors: Yann Lalanne &amp; Laurent Lanceleur · Student research project, team of three</p>
+
+    <div class="kpis">
+      <div><b>2</b><span>stations, up- and downstream</span></div>
+      <div><b>2</b><span>contrasting flow periods</span></div>
+      <div><b>1st</b><span>high-frequency survey of the site</span></div>
+    </div>
+
+    <h3>Context</h3>
+    <p>The Errota Handia Regional Nature Reserve includes a 2-hectare pond on the Alotz stream. Ponds can change a stream's temperature, oxygen, nutrients and sediment transport. We assessed whether this one affects water quality downstream, to guide the reserve's management.</p>
+
+    <h3>Approach</h3>
     <ul>
-      <li>Co-led a river water-quality assessment to evaluate the ecological impact of a man-made pond on a nature-reserve river.</li>
-      <li>Analysed biological, physical and chemical parameters using standardised EU methods.</li>
+      <li><b>Biological quality</b>: macroinvertebrate sampling (IBGN standard), diversity indices and functional traits.</li>
+      <li><b>Physico-chemistry</b>: hourly multiparameter probes (Aqua TROLL 600, EXO2) during low flow and high flow, plus lab analyses of nutrients, suspended matter and chlorophyll.</li>
+      <li>Results compared with EU Water Framework Directive thresholds.</li>
     </ul>
-    <p class="todo">Full description coming soon.</p>
+
+    <figure>
+      <img src="img/projects/river-fieldwork.jpg" alt="Water sampling in the stream" class="panel-fig photo">
+      <figcaption>Water sampling downstream of the pond.</figcaption>
+    </figure>
+
+    <h3>Key findings</h3>
+    <ul>
+      <li>Water quality was <b>good</b> at both stations (IBGN 13/20), and nearly all parameters met WFD "good" or "very good" status.</li>
+      <li>Downstream, filter feeders jumped from 10% to 52% of the community, alongside higher suspended matter, chlorophyll and nitrates. The pond exports particles and nutrients, although concentrations stay low.</li>
+      <li>Low oxygen upstream during low flow (41% saturation) flagged a point for future monitoring.</li>
+    </ul>
+
+    <div class="tags"><span class="tag">Macroinvertebrates</span><span class="tag">IBGN</span><span class="tag">Water chemistry</span><span class="tag">High-frequency sensors</span><span class="tag">Water Framework Directive</span></div>
   </template>
 
   <!-- Side panel -->
