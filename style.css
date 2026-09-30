@@ -214,6 +214,23 @@ p { margin: 0 0 1em; }
   .edu-step[data-uni="saclay"] .m-logo { background: #63003c; }
 }
 
+/* ================= About me ================= */
+.about { background: var(--navy); color: var(--cream); padding: 120px 0; }
+.about-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: 80px; align-items: start; }
+.about h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); font-weight: 300; margin-bottom: 28px; max-width: 16em; }
+.about-text p:not(.eyebrow) { color: var(--cream-muted); font-size: 1.05rem; max-width: 36em; }
+.now { list-style: none; margin: 0; padding: 0; border-left: 1px solid rgba(243,236,220,.2); }
+.now li { position: relative; padding: 0 0 36px 28px; }
+.now li:last-child { padding-bottom: 0; }
+.now li::before { content: ""; position: absolute; left: -5px; top: 6px; width: 9px; height: 9px; border-radius: 50%; background: var(--navy); border: 1px solid var(--cream-muted); }
+.now li:first-child::before { background: var(--cream); border-color: var(--cream); box-shadow: 0 0 0 5px rgba(243,236,220,.12); }
+.now-tag { display: inline-block; font-size: .72rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--cream-muted); margin-bottom: 8px; }
+.now h3 { font-size: 1.15rem; font-weight: 500; margin: 0 0 4px; }
+.now p { margin: 0; color: var(--cream-muted); font-size: .95rem; }
+.now a { color: var(--cream); }
+.now-detail { margin-top: 6px !important; font-style: italic; }
+@media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; gap: 56px; } .about { padding: 88px 0; } }
+
 /* ================= Projects ================= */
 .projects { background: var(--cream); color: var(--navy); padding: 120px 0; }
 .projects .eyebrow { color: var(--ink-muted); }
